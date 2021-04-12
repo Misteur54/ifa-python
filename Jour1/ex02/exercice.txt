@@ -20,6 +20,5 @@ puis vérifiez-le dans l’interpréteur :
 4. saisons[:][1]. Comment expliquez-vous ce dernier résultat ?
 
 
-4.10.3
 Table de multiplication par 9
 Affichez la table de multiplication par 9 en une seule commande avec les instructions range() et list().
