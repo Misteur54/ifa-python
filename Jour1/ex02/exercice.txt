@@ -1,0 +1,25 @@
+#30 minutes pour faire cette exo
+
+Créez une liste avec les jours de la semaine
+
+1) Récupérer les 5 premiers jours d'une part et ceux du week-end d'autre part. Utilisez l'indiçage
+2) Cherchez un autre moyen pour arriver au même résultat(autre indiçage)
+3) Deux manières pour accéder au dernier jour de la semaine
+4) Inversez les jours de la semaine en une commande
+
+
+Saisons
+
+4 lists hiver, été, printemps et automne contenant les mois correspondants aux saisons.
+Créez ensuite une liste saisons contenant les listes hiver, printemps, ete et automne. Prévoyez ce que renvoient les instructions suivantes,
+puis vérifiez-le dans l’interpréteur :
+
+1. saisons[2]
+2. saisons[1][0]
+3. saisons[1:2]
+4. saisons[:][1]. Comment expliquez-vous ce dernier résultat ?
+
+
+4.10.3
+Table de multiplication par 9
+Affichez la table de multiplication par 9 en une seule commande avec les instructions range() et list().

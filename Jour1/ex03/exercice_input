@@ -1,0 +1,19 @@
+Pour cette suite d'exo cela va être un cumul de tout ce qu'on a vu pour le moment
+
+Exo 1:
+    récupérer l'entrée utilisateur puis afficher si c'est une string ou un nombre / float
+
+
+Exo 2:
+    récupérer l'entrée utilisateur sans interruption et récupérer plusieurs informations et les stocker ->
+    âge / métier / passions / taille
+    puis afficher une phrase récapitulative après avoir récupérer toutes les informations
+
+
+Exo 3:
+    En gardant l'exo 2:
+    rajouter un calculateur de nombre premier:
+    Demande si il veut tester cette fonctionnalité.
+    Si oui -> l'utilisateur rentre un chiffre -> et vous dites si il est premier ou non ainsi de suite
+    Si non -> terminer le script
+

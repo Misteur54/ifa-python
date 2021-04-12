@@ -1,0 +1,41 @@
+Soit la liste ['ifa', 'elian', 'davy', 'lol'].
+3 façons différentes d'afficher les éléments -> 2 for et 1 while
+
+
+Créez une liste des jours de la semaine les 7 jours
+Avec for -> afficher les jours de la semaine
+avec while -> afficher les jours du W-E
+
+
+Affichez les nombres de 1 à 10 sur la même ligne (une seule ligne)
+
+Créez une liste dynamiquement de chiffre impaire
+c'est à dire 1,3, 5 qui vont être stocké dans une liste
+puis construire  une liste paire  dans laquelle  tous les élèments de la liste impaire  sont incrémentés de 1
+
+Un peu de dessin...
+
+créez une boucle pour avoir ce résultat
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+puis dans l'autre sens
+
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
