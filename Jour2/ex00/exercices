@@ -1,0 +1,20 @@
+Dans le fichier moyenne.txt il va voir des notes obtenues
+Chaque ligne du fichier contient qu'une note
+
+Créez un fichier python qui lit chaque ligne
+extrait sous forme de float et les mettre sur une liste
+à la fin le script doit afficher  la moyenne des notes avec avec 2 décimales
+
+
+
+
+Pour aller plus loin
+nous allons créer un fichier
+si la note est inférieur à 10 il est recalé
+si la note est supérieur ou égale à 10 il est admis
+
+dans le fichier que j'attends voici un exemple:
+
+13.5 admis
+17.0 admis
+9.5 recalé

@@ -1,0 +1,18 @@
+Affichez sur la même ligne les nombres de 10 à 20 (inclus) ainsi que leur racine carrée avec 3 décimales. Utilisez pour
+cela le module math avec la fonction sqrt(). Exemple :
+
+10 3.162
+11 3.317
+
+
+
+Affichez le nom et le contenu du répertoire courant
+Déterminez le nombre total des fichiers et de répertoires présents
+
+
+Générez une séquence aléatoire de 6 chiffres, compris entre 1 et 4
+
+
+Amélioration du compteur de lignes
+
+Regardez si le fichier est présent ou non dans le répertoire courant
