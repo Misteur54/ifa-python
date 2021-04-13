@@ -1,9 +1,13 @@
 #comment importer
 
 import random
+import  fintech
 
-print(random.randint(0, 10))
 
+import fintech
+from random import randint
+
+# print(random.randint(0, 10))
 #utilisation
 
 from random import *

@@ -10,8 +10,8 @@ extrait sous forme de float et les mettre sur une liste
 
 Pour aller plus loin
 nous allons créer un fichier
-si la note est inférieur à 10 il est recalé
-si la note est supérieur ou égale à 10 il est admis
+si la note est inférieur à 50 il est recalé
+si la note est supérieur ou égale à 50 il est admis
 
 dans le fichier que j'attends voici un exemple:
 

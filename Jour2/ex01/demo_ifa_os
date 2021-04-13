@@ -1,10 +1,11 @@
 import sys
 import os
 
-if os.path.exists('toto.ifa'):
-    print('le fichier est là')
-else:
-    sys.exit('le fichier n\'est pas là')
+
+# if os.path.exists('toto.ifa'):
+#     print('le fichier est là')
+# else:
+#     sys.exit('le fichier n\'est pas là')
 
 
 #savoir le path d'où nous sommes
@@ -13,4 +14,3 @@ print(os.getcwd())
 
 print(os.listdir())
 #contenu du répertoire où nous sommes
-

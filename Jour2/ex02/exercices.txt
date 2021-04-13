@@ -1,12 +1,11 @@
 Une fonction dans un module qui va prendre en paramètre un dict
 regardez si c'est bien un dict
 Dedans vous allez mettre des informations comme ceci:
-{'Elian': 18, 'Kevin': 20}
+{'Elian': 18, 'Kevin': 20, 'Olivier': 20}
 La fonction va retourner la moyenne du dictionnaire
 
+
 Une fonction qui renvoie le nom de la personne qui a la plus grande note
-
-
 
 Une fonction qui va ouvrir un fichier donné en paramètre
 chaque ligne du fichier est sous le format suivant:
@@ -30,4 +29,3 @@ dict3 = {"Elian": 10, "Thibaud": 12, "Momo": 17}
 la fonction retournera
 
 {'elian': [10, 15, 10], 'kevin': [13, 10], 'thibaud': [12], 'momo': [[7], 17, 17]}
-
