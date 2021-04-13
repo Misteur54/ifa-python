@@ -1,0 +1,9 @@
+Le but de l'exercice:
+
+Créez son propre module avec différentes informations
+Une fonction qui va écrire les fichiers avec un mode différents avec des informations différentes
+une fonction qui va lire les fichiers
+une fonction qui va dire si c'est un fichier ou non
+une fonction qui va dire si c'est uniquement des chiffres
+une fonction qui va dire si c'est uniquement des caractères
+une fonction qui va compter les fichiers / dossiers dans un répertoire donné en path
