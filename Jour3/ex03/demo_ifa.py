@@ -1,0 +1,1 @@
+#héritage isinstance, issubclass

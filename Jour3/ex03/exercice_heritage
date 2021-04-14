@@ -1,0 +1,42 @@
+Créez une classe vehicule
+qui va contenir des informations comme:
+nom
+kilomètre
+date de fabrication
+type de carburant
+prix d'achat
+
+avec un attribut de classe et une méthode qui va get et set l'attribut de la classe qui va être le nombre de véhicule
+
+faites des property pour la date de fabrication et prix d'achat
+
+
+
+Deuxième exo
+
+Faites une classe fille qui va se nommer voiture qui va hériter de véhicule
+en rajoutant la puissance dedans (nombre de ch)
+la couleur
+La vitesse de la voiture MAX
+ajoutez une methode qui va nous donner des informations ->
+comment la voiture se déplace -> avec son nom + la couleur
+
+
+
+
+Faite une classe fille qui va se nommer bateau qui va hériter de véhicule
+avec la puissance
+la couleur
+le port de départ
+le port d'arrivé
+Le nombre de personne dedans
+si il y a des escales -> combien de personnes montent et descendent du bateau
+Le nombre de jour de la croisière du bateau
+La vitesse max
+la vitesse de croisière en moyenne
+
+
+
+
+
+
