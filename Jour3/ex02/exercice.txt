@@ -1,0 +1,7 @@
+Reprendre l'exercice d'avant
+
+Rajoutez desinformations dans la classe en rendant des attributs privés->
+Propiétaire
+Dernière vente de la parcelle
+Prix au m2
+tout ça avec property

@@ -1,0 +1,18 @@
+Le but de cette exercice est de créer une boucle de jeu
+qui va prendre en paramètre un nombre
+et qui va le reverse
+Rajoutez une gestion d'erreur avec le try except directement
+(deux cas possibles voir +)
+
+
+maintenant on peut rentrer un chiffre en décimale soit en 2.5 ou 2,5
+(vous devez le gérer vous même)
+
+
+
+Exo 2
+une boucle de jeu  qui va donner la racine carré d'un nombre et la gestion d'erreur
+
+
+Exo3
+amélioration des deux boucles pour gérer l'exception KeyboardInterrupt

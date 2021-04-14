@@ -1,0 +1,11 @@
+Créez une classe terrain
+qui va contenir les informations suivante dans le constructeur
+L x l et localisation, créez un attribut de classe localisation
+
+
+Créez une instance de la classe
+Affichez les informations contenues dans l'instance
+créez une fonction qui calcule l'air du terrain et l'afficher
+créez une méthode de classe qui va changer l'attribut de classe localisation
+Affichez la nouvelle valeur de l'attribut de classe localisation
+
