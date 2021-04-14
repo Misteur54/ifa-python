@@ -53,9 +53,10 @@ def read_variadic(*items_dict):
     for item in items_dict:
         if type(item) is dict and len(item):
             for key, value in item.items():
-                print(key, value)
+                # print(key, value)
                 if key in data:
                     print(key)
+                    data[key].append(value)
                 else:
-                    data[key] = []
+                    data[key] = [value]
     print(data)
