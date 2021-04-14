@@ -11,7 +11,6 @@ avec un attribut de classe et une méthode qui va get et set l'attribut de la cl
 faites des property pour la date de fabrication et prix d'achat
 
 
-
 Deuxième exo
 
 Faites une classe fille qui va se nommer voiture qui va hériter de véhicule
