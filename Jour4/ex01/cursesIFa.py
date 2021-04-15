@@ -14,6 +14,8 @@ def main(stdscr):
     while True:
         entry = stdscr.getch()
         stdscr.clear()
+        h, w = stdscr.getmaxyx()
+        stdscr.addstr(0, 0, f"{str(h)}, {str(w)}")
         if entry == curses.KEY_UP:
             stdscr.attron(curses.color_pair(1))
             stdscr.addstr(10, 10, "je suis sur la touche du haut")
