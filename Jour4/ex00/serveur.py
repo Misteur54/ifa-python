@@ -4,6 +4,8 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from json import JSONDecodeError
 
 import writer
+import generator
+import subprocess
 
 myapp = FastAPI()
 
@@ -27,14 +29,16 @@ async def getUser(id: str, request: Request, response: Response):
 async def startScripts(request: Request):
     try:
         body = await request.json()
+        nameScript = 'nameScript'
+        paramsScript = "params"
 
         for key, value in body.items():
-            if 'nameScript' == key:
+            if nameScript == key:
                 if not isinstance(value, str):
                     return JSONResponse({'error': 'Le nom du script ne peut pas être un nombre il faut que se soit une string'})
                 if not len(value):
                     return JSONResponse({'error': 'Le nom du script ne peut pas être vide'})
-            if "params" == key:
+            if paramsScript == key:
                 if not isinstance(value, dict):
                     return JSONResponse({'error': 'Les params doivent être un dict'})
                 if not len(value):
@@ -42,15 +46,34 @@ async def startScripts(request: Request):
                 for pKey, pValue in value.items():
                     if not isinstance(pValue, int):
                         return JSONResponse({'error': 'les params doivent être des nombres / chiffres'})
+        params = {'min': 0, 'max': 0, 'lenght': 0}
+        for key, value in body[paramsScript].items():
+            print(value)
+            if key == 'nbMini':
+                params['min'] = value
+            if key == 'nbMax':
+                params['max'] = value
+            if key == 'lenght':
+                params['lenght'] = value
+        scriptInfo = f"{body[nameScript]} {params['min']} {params['max']} {params['lenght']}"
+        returnValue = subprocess.call(f"python3 {scriptInfo}", shell=True)
+
+        if returnValue != 0:
+            return JSONResponse({'error': "Il y a un problème avec le script, peut être le nom ou trop ou pas assez d'argument"})
+
+        reader = writer.Writer()
+        fileGenerated = reader.readerStr('nb.txt', 'r')
+
+        for pos, nb in enumerate(fileGenerated):
+            fileGenerated[pos] = int(nb.rstrip())
+
+        return JSONResponse({'datas': fileGenerated})
 
     except JSONDecodeError:
         return JSONResponse({'error': 'il n y a pas de body pour executer le / les scripts'})
     except:
         return JSONResponse({'error': 'problème interne'})
     return JSONResponse({'test': 'nous sommes dans les scripts'})
-
-
-
 
 
 

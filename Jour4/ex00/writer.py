@@ -12,6 +12,9 @@ class Writer:
             if isinstance(informations, dict):
                 for key, value in informations.items():
                     file.write(f"{value}\n")
+            if isinstance(informations, list):
+                for nb in informations:
+                    file.write(f"{nb}\n")
     # def writerJson(self, path, mode, informations):
     #     {'test': 10}
     #
