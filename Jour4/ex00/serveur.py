@@ -1,6 +1,7 @@
 from fastapi import Request, Response, FastAPI, status
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
+from json import JSONDecodeError
 
 import writer
 
@@ -21,9 +22,40 @@ async def getUser(id: str, request: Request, response: Response):
     return JSONResponse({'text': tmp_file})
 
 
+
+@myapp.post('/ifa/start')
+async def startScripts(request: Request):
+    try:
+        body = await request.json()
+
+        for key, value in body.items():
+            if 'nameScript' == key:
+                if not isinstance(value, str):
+                    return JSONResponse({'error': 'Le nom du script ne peut pas être un nombre il faut que se soit une string'})
+                if not len(value):
+                    return JSONResponse({'error': 'Le nom du script ne peut pas être vide'})
+            if "params" == key:
+                if not isinstance(value, dict):
+                    return JSONResponse({'error': 'Les params doivent être un dict'})
+                if not len(value):
+                    return JSONResponse({'error': 'Les params du dict ne peuvent pas être vides'})
+                for pKey, pValue in value.items():
+                    if not isinstance(pValue, int):
+                        return JSONResponse({'error': 'les params doivent être des nombres / chiffres'})
+
+    except JSONDecodeError:
+        return JSONResponse({'error': 'il n y a pas de body pour executer le / les scripts'})
+    except:
+        return JSONResponse({'error': 'problème interne'})
+    return JSONResponse({'test': 'nous sommes dans les scripts'})
+
+
+
+
+
+
 @myapp.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    # print(await request.json(), exc.status_code)
     return JSONResponse({"message": "endpoint not found" })
 
 
