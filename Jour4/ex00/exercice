@@ -1,0 +1,31 @@
+Si vous bloquez à une étape !! Dites moi le directement c'est important
+Pour l'évaluation de demain entre 8h et 17h vous n'aurez le droit à plus aucune question (sauf pour le rendu)...
+
+Alors pour l'exercice avec FastAPI
+Celui ci va se découper en différentes étapes
+
+1ère étape créer un serveur en python avec FastAPI
+2ème étape créer une route qui prend en paramètre des {id} par exemple en string !
+3ème étape créer un handle qui va dire si oui ou non la page existe -> si non renvoyez un message d'erreur perso (regardez du côté de la doc + starlette)
+4ème étape créer une class qui va permettre d'encapusler l'open / le write d'un fichier depuis le serveur
+5ème étape créer une route qui va nous permettre de lancer des scripts -> dans le body de notre requête (faite depuis postman / truc du genre)
+les paramètres du script vont être aussi donnés dans le body de notre requête
+(Trouver comment lancer un script python depuis le serveur)
+https://stackoverflow.com/questions/89228/how-to-execute-a-program-or-call-a-system-command-from-python
+
+LE script sera le suivant : un générateur de chiffre compris qui sera variadic avec les paramètres passés en json
+par exemple des chiffres entre 6 et 10 en longueur et 15000 dans un fichier par exemple ou dans une liste
+6ème étape renvoyez le resultat du script
+
+
+
+Maintenant comment tester tout ça ?
+avec postman c'est bien mais nous on veut traiter les données !
+
+Vous allez créer un programme qui va faire des call api avec requests
+
+en donnant tout simplement les paramètres dans requests
+
+Bonne chance :) ça va prendre un peu plus de temps que les exo comme d'habitute mais ça sera un bien pour un mal
+
+
