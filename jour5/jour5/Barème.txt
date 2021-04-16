@@ -1,0 +1,18 @@
+Gestion des erreurs(joueur et maps) : 4 points
+    Il y aura plusieurs stades de gestion d'erreur
+
+Condition de victoire et défaite 4 points
+    Il y aura plusieurs stades de victoire et défaites
+Jouabilité (sans lag) 2 points
+    avec les touches que nous avons définis
+
+Arbre git(Pushs réguliés et bien définis) 2 points
+Code propre ! 4 points
+si vous respectez une norme etc etc bien separer
+
+Test 2 points
+    Si les tests sont pertinants ou pas
+    S'il couvre un certain niveau de %
+
+Bonus à voir suivant celui qui a été choisi (ou plusieurs)
+
