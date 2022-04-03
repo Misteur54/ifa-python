@@ -1,7 +1,7 @@
 #prédiction des prints notez en commentaire
-(1+2)**3) #
-(1+2)**3) #
-"Da" * 4  #
+(1+2)**3 #
+(1+2)**3 #
+"Da" * 4 #
 "Da" + 3 #
 ("Pa"+"La") * 2 #
 ("Da"*4) / 2 #
