@@ -1,0 +1,43 @@
+Bienvenue à tous pour l'évaluation de python.
+
+Cette évaluation prendra un temps d'environ 3h.
+Le projet ne sera pas un gros projet pour ne pas vous faire perdre du temps sur vos autres projets en cours.
+
+Celle-ci va regrouper plusieurs notions que nous avons pu aborder durant nos heures ensemble.
+
+Le rendu se fera de cette manière:
+
+Créer un repo github et m'envoyer une invitation sur mon mail ou @ de github.
+
+Email : elian.nicaise@epitech.eu / @Misteur54
+
+Les ressources nécessaires :
+    Python3, Uvicorn, FastAPI, Git,
+
+
+But du projet:
+
+    Création d'une API from scratch avec FastAPI.
+    Le but de l'api va être de faire des créations de différents types de véhicules
+    Il y a aura 4 types de véhicules: Bateau, Voiture, Moto, Avion.
+    A vous de voir comment vous allez organiser tout ceci.
+    Les attributs de base pour chaque type seront au minimum : Nom, La marque, la vitesse max, les kms...
+    Tout attributs qui vous sembles nécessaires / que vous rajoutez qui sont pertinents pourront être prit en compte.
+    Pour le stockage des informations des classes instanciées à vous de voir (sans db sinon les 3h vont être courtes)
+    L'api va contenir plusieurs routes.
+    1ère route : Une route qui va permettre de savoir si l'API est lancée
+    2ème route : Une route pour la création de véhicules(à vous de voir comment vous pouvez-faire pour chaque type)
+    3ème route : Une route pour le nombre total de véhicule
+    4ème route : Une route qui permet de savoir pour un type de véhicule combien il y en a
+    5ème route : Une route qui va permettre de retrouver un véhicule par différent moyen(name, nombre km etc...)
+
+    Ne pas oublier si on lance une requête sur une route qui n'existe pas de faire un message custom en message
+    dans la request de retour
+
+    En ce qui concerne la notation: la propreté du code sera regardée, la cohérence de notation utilisée
+    Si vous avez des questions n'hésitez pas.
+
+    Tout type de bonus sera bien évidemment pris en compte, si un minimum de point ont été respecté / réalisé de l'exercice
+
+
+Bonne chance à tous les amis
